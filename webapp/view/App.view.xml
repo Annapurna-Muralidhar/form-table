@@ -9,9 +9,9 @@
 			<Input value="{/p_id}" valueLiveUpdate="true" width="200px" />
 			<Label text="Product name"/>
 			<Input value="{/name}" valueLiveUpdate="true" width="200px" />
-			<Label text="sell Price"/>
-			<Input value="{/costPrice}" valueLiveUpdate="true" width="200px" />
 			<Label text="Cost Price"/>
+			<Input value="{/costPrice}" valueLiveUpdate="true" width="200px" />
+			<Label text="sell Price"/>
 			<Input value="{/sellPrice}" valueLiveUpdate="true" width="200px" />
 			<Button text="Submit" press=".onSubmit"/>
 		</form:SimpleForm>
