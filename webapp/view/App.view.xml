@@ -17,4 +17,31 @@
 		</form:SimpleForm>
 		
 	</Panel>
+	<Panel class="sapUiResponsiveMargin" width="auto">
+	<Table id="table" items="{path: 'tableModel>/', sorter: {path: 'p_id'}}">
+        <columns>
+            <Column>
+                <Label text="Product ID"/>
+            </Column>
+            <Column>
+                <Label text="Product Name"/>
+            </Column>
+            <Column>
+                <Label text="Cost Price"/>
+            </Column>
+            <Column>
+                <Label text="Sell Price"/>
+            </Column>
+        </columns>
+        <items>
+            <ColumnListItem>
+                <cells>
+                    <ObjectIdentifier title="{tableModel>p_id}"/>
+                    <ObjectIdentifier title="{tableModel>name}"/>
+                    <ObjectIdentifier title="{tableModel>costPrice}"/>
+                    <ObjectIdentifier title="{tableModel>sellPrice}"/>
+                </cells>
+            </ColumnListItem>
+        </items>
+    </Table></Panel>
 </mvc:View>
